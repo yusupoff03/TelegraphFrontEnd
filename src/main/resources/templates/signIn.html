@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign In</title>
+</head>
+<body>
+<form action="/sign-in" method="post">
+  <input name="username" type="text" placeholder="Username">
+  <input name="password" type="password" placeholder="Password">
+  <button type="submit">Sign In</button>
+</form>
+<h4 th:if="${message!=null}">th:text="${message}"</h4>
+</body>
+</html>
